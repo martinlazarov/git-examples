@@ -80,6 +80,26 @@ describe('addProceduresToClass', () => {
     })
 })
 
+describe('SomeTestCases', () => {
+    it('returns mapped data with expanded=false', () => {
+        const result = utils.mapProceduresWhenEdit(mockProceduresList, mockSubClassData, false);
+        expect(result.length).toEqual(1);
+        expect(result[0].expanded).toBe(false);
+    });
+    it('returns data with dateFrom = effDate', () => {
+        const effDate = new Date('06/08/2019');
+        const result = createClassFunc.addProceduresToClass(mockProceduresData, effDate);
+        expect(result[0].dateFrom).toEqual(effDate);
+    })
+    it('returns dateFrom: effDate, dateTo:termDate', () => {
+        const effDate = new Date('06/08/2019');
+        const termDate = new Date('06/20/2019');
+        const result = utils.changeExistingEffDate(mockProceduresList, effDate, termDate);
+        expect(result[0].dateFrom.getTime()).toEqual(effDate.getTime());
+        expect(result[0].dateTo.getTime()).toEqual(termDate.getTime());
+    });
+})
+
 // TODO test
 // describe('markFormAsPristine', () => {
 //     it('should mark a form as pristine', () => {
