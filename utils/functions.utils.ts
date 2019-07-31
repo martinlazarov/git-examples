@@ -123,3 +123,26 @@ export function mapProcedureToData(proceduresArray) {
 
     return proceduresData;
 }
+
+
+function ageLimitRowData(ageLow: number, ageHigh: number): string {
+    if (ageLow && ageHigh) {
+        return ageLow + "-" + ageHigh;
+    } else if (!ageLow && ageHigh) {
+        return ">" + ageHigh;
+    } else if (ageLow && !ageHigh) {
+        return "<" + ageLow
+    } else {
+        return null;
+    }
+}
+
+export function transform(rowData: any, ): any {
+    if (!rowData.ageLimits) {
+        return ageLimitRowData(rowData.ageLow, rowData.ageHigh);
+    }
+    return rowData.ageLimits
+        .map(age => ageLimitRowData(age.ageLow, age.ageHigh))
+        .filter(age => age !== null)
+        .join(', ');
+}

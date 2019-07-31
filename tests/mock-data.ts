@@ -23,7 +23,16 @@ export const mockProceduresList: any = [
         "treatmentAreaName": null,
         "surfaceArea": null,
         "surfaceAreaName": null,
-        "treatmentAreaDetailList": null
+        "treatmentAreaDetailList": [{
+            id: 1000,
+            description: 'AA'
+        }, {
+            id: 1001,
+            description: 'BB'
+        }, {
+            id: 1002,
+            description: 'CC'
+        }]
     },
     {
         "id": 0,
@@ -158,139 +167,139 @@ export const mockProceduresList: any = [
 ];
 
 export const mockProcedure: Procedure =
-  {
-      id: 1,
-      benClassId: 5,
-      benClassName: 'null',
-      isSubclass: 0,
-      benClassIdSub: 6,
-      benClassNameSub: 'null',
-      isCustom: 0,
-      procedureId: 659,
-      code: 120,
-      description: "Periodic oral eval",
-      shortDescription: "Periodic oral eval",
-      dateFrom: new Date("1970-01-01T00:00:00-05:00"),
-      dateTo: null,
-      serviceType: 10921,
-      serviceTypeName: "Oral Evaluation",
-      neddCoverage: 11001,
-      neddCoverageName: "NEDD Covered",
-      ageLow: 2,
-      ageHigh: 5,
-      treatmentArea: 150,
-      treatmentAreaName: 'null',
-      treatmentAreaDetailList: 'null'
-  }
+{
+    id: 1,
+    benClassId: 5,
+    benClassName: 'null',
+    isSubclass: 0,
+    benClassIdSub: 6,
+    benClassNameSub: 'null',
+    isCustom: 0,
+    procedureId: 659,
+    code: 120,
+    description: "Periodic oral eval",
+    shortDescription: "Periodic oral eval",
+    dateFrom: new Date("1970-01-01T00:00:00-05:00"),
+    dateTo: null,
+    serviceType: 10921,
+    serviceTypeName: "Oral Evaluation",
+    neddCoverage: 11001,
+    neddCoverageName: "NEDD Covered",
+    ageLow: 2,
+    ageHigh: 5,
+    treatmentArea: 150,
+    treatmentAreaName: 'null',
+    treatmentAreaDetailList: 'null'
+}
 export const mockProcedure2: Procedure =
-  {
-      id: 2,
-      benClassId: 5,
-      benClassName: 'null',
-      isSubclass: 0,
-      benClassIdSub: 6,
-      benClassNameSub: 'null',
-      isCustom: 0,
-      procedureId: 100,
-      code: 120,
-      description: "Periodic oral eval",
-      shortDescription: "Periodic oral eval",
-      dateFrom: new Date("1970-01-01T00:00:00-05:00"),
-      dateTo: null,
-      serviceType: 10921,
-      serviceTypeName: "Oral Evaluation",
-      neddCoverage: 11001,
-      neddCoverageName: "NEDD Covered",
-      ageLow: 2,
-      ageHigh: 5,
-      treatmentArea: 150,
-      treatmentAreaName: 'null',
-      treatmentAreaDetailList: 'null'
-  }
+{
+    id: 2,
+    benClassId: 5,
+    benClassName: 'null',
+    isSubclass: 0,
+    benClassIdSub: 6,
+    benClassNameSub: 'null',
+    isCustom: 0,
+    procedureId: 100,
+    code: 120,
+    description: "Periodic oral eval",
+    shortDescription: "Periodic oral eval",
+    dateFrom: new Date("1970-01-01T00:00:00-05:00"),
+    dateTo: null,
+    serviceType: 10921,
+    serviceTypeName: "Oral Evaluation",
+    neddCoverage: 11001,
+    neddCoverageName: "NEDD Covered",
+    ageLow: 2,
+    ageHigh: 5,
+    treatmentArea: 150,
+    treatmentAreaName: 'null',
+    treatmentAreaDetailList: 'null'
+}
 export const mockProcedure3: Procedure =
-  {
-      id: 3,
-      benClassId: 5,
-      benClassName: 'null',
-      isSubclass: 0,
-      benClassIdSub: 6,
-      benClassNameSub: 'null',
-      isCustom: 0,
-      procedureId: 100,
-      code: 200,
-      description: "Periodic oral eval",
-      shortDescription: "Periodic oral eval",
-      dateFrom: new Date("1970-01-01T00:00:00-05:00"),
-      dateTo: null,
-      serviceType: 10921,
-      serviceTypeName: "Oral Evaluation",
-      neddCoverage: 11001,
-      neddCoverageName: "NEDD Covered",
-      ageLow: 2,
-      ageHigh: 5,
-      treatmentArea: 150,
-      treatmentAreaName: 'null',
-      treatmentAreaDetailList: 'null'
-  }
+{
+    id: 3,
+    benClassId: 5,
+    benClassName: 'null',
+    isSubclass: 0,
+    benClassIdSub: 6,
+    benClassNameSub: 'null',
+    isCustom: 0,
+    procedureId: 100,
+    code: 200,
+    description: "Periodic oral eval",
+    shortDescription: "Periodic oral eval",
+    dateFrom: new Date("1970-01-01T00:00:00-05:00"),
+    dateTo: null,
+    serviceType: 10921,
+    serviceTypeName: "Oral Evaluation",
+    neddCoverage: 11001,
+    neddCoverageName: "NEDD Covered",
+    ageLow: 2,
+    ageHigh: 5,
+    treatmentArea: 150,
+    treatmentAreaName: 'null',
+    treatmentAreaDetailList: 'null'
+}
 export const mockProcedure4: Procedure =
-  {
-      id: 4,
-      benClassId: 5,
-      benClassName: 'null',
-      isSubclass: 0,
-      benClassIdSub: 6,
-      benClassNameSub: 'null',
-      isCustom: 0,
-      procedureId: 100,
-      code: 200,
-      description: "Periodic oral eval",
-      shortDescription: "Periodic oral eval",
-      dateFrom: new Date("1970-01-01T00:00:00-05:00"),
-      dateTo: null,
-      serviceType: 10921,
-      serviceTypeName: "Oral Evaluation",
-      neddCoverage: 11001,
-      neddCoverageName: "NEDD Covered",
-      ageLow: 2,
-      ageHigh: 5,
-      treatmentArea: 150,
-      treatmentAreaName: 'null',
-      treatmentAreaDetailList: 'null'
-  }
+{
+    id: 4,
+    benClassId: 5,
+    benClassName: 'null',
+    isSubclass: 0,
+    benClassIdSub: 6,
+    benClassNameSub: 'null',
+    isCustom: 0,
+    procedureId: 100,
+    code: 200,
+    description: "Periodic oral eval",
+    shortDescription: "Periodic oral eval",
+    dateFrom: new Date("1970-01-01T00:00:00-05:00"),
+    dateTo: null,
+    serviceType: 10921,
+    serviceTypeName: "Oral Evaluation",
+    neddCoverage: 11001,
+    neddCoverageName: "NEDD Covered",
+    ageLow: 2,
+    ageHigh: 5,
+    treatmentArea: 150,
+    treatmentAreaName: 'null',
+    treatmentAreaDetailList: 'null'
+}
 
 export const mockProcedureAgeLimit: IProcedureAgeLimit =
-  {
-      id: 4,
-      benClassId: 5,
-      benClassName: 'null',
-      isSubclass: 0,
-      benClassIdSub: 6,
-      benClassNameSub: 'null',
-      isCustom: 0,
-      procedureId: 100,
-      code: 200,
-      description: "Periodic oral eval",
-      shortDescription: "Periodic oral eval",
-      dateFrom: new Date("1970-01-01T00:00:00-05:00"),
-      dateTo: null,
-      serviceType: 10921,
-      serviceTypeName: "Oral Evaluation",
-      neddCoverage: 11001,
-      neddCoverageName: "NEDD Covered",
-      ageLimits: [
-          {
-              ageLow: 2,
-              ageHigh: 6
-          },
-          {
-              ageLow: 8,
-              ageHigh: 10
-          }
-      ],
-      treatmentArea: 150,
-      treatmentAreaName: 'null',
-      treatmentAreaDetailList: 'null'
-  }
+{
+    id: 4,
+    benClassId: 5,
+    benClassName: 'null',
+    isSubclass: 0,
+    benClassIdSub: 6,
+    benClassNameSub: 'null',
+    isCustom: 0,
+    procedureId: 100,
+    code: 200,
+    description: "Periodic oral eval",
+    shortDescription: "Periodic oral eval",
+    dateFrom: new Date("1970-01-01T00:00:00-05:00"),
+    dateTo: null,
+    serviceType: 10921,
+    serviceTypeName: "Oral Evaluation",
+    neddCoverage: 11001,
+    neddCoverageName: "NEDD Covered",
+    ageLimits: [
+        {
+            ageLow: 2,
+            ageHigh: 6
+        },
+        {
+            ageLow: 8,
+            ageHigh: 10
+        }
+    ],
+    treatmentArea: 150,
+    treatmentAreaName: 'null',
+    treatmentAreaDetailList: 'null'
+}
 
 export const mockSubClassData = {
     "id": 216,
@@ -323,19 +332,19 @@ export const mockBenefitClassData = {
 };
 
 export const mockProceduresData = [
-   {data:  mockProceduresList[0]},
-   {data:  mockProceduresList[1]},
-   {data:  mockProceduresList[2]},
-   {data:  mockProceduresList[3]},
-   {data:  mockProceduresList[4]},
+    { data: mockProceduresList[0] },
+    { data: mockProceduresList[1] },
+    { data: mockProceduresList[2] },
+    { data: mockProceduresList[3] },
+    { data: mockProceduresList[4] },
 ]
 
 export const mockForm: any = {
-  value: {
-    description: "ggg",
-    benClassType: 11301,
-    effectiveDate: 0,
-    termDate: 0,
-    isSubclass: 1
-  }
+    value: {
+        description: "ggg",
+        benClassType: 11301,
+        effectiveDate: 0,
+        termDate: 0,
+        isSubclass: 1
+    }
 };
