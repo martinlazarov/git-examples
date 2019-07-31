@@ -1,5 +1,3 @@
-import { Procedure, IProcedureAgeLimit } from '../interfaces';
-
 export const mockProceduresList: any = [
     {
         "id": 0,

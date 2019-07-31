@@ -4,7 +4,7 @@ export function addProceduresToClass(procedure: any[], effDate?: any) {
     procedure.forEach(element => {
         element.data.isCustom = 0;
         element.data.benClassId = 0;
-        if(effDate) {
+        if (effDate) {
             element.data.dateFrom = effDate;
         }
         tranformedPr.push(element.data)

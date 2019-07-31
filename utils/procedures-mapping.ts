@@ -1,4 +1,3 @@
-import { Procedure, IProcedureAgeLimit } from '../interfaces';
 
 const UNASSIGNED_PROCEDURES_LABEL = 'Unassigned NEDD Covered';
 
