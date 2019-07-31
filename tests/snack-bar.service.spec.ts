@@ -18,4 +18,9 @@ describe('SnackBarService', () => {
     const service: SnackBarService = TestBed.get(SnackBarService);
     expect(service).toBeTruthy();
   });
+
+  it('should be updated', () => {
+    const service: SnackBarService = TestBed.get(SnackBarService);
+    expect(service).toBeTruthy();
+  });
 });
