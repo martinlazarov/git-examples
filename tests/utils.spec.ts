@@ -30,6 +30,38 @@ describe('mapProceduresWhenView', () => {
     });
 });
 
+describe('pipe transform method', () => {
+    it('should return a string of single ageLimit', () => {
+        const procedureNoAgeLimitArray = { ...mockProcedure4 };
+        const result = `${procedureNoAgeLimitArray.ageLow}-${procedureNoAgeLimitArray.ageHigh}`;
+
+        expect(pipe.transform(procedureNoAgeLimitArray)).toEqual(result);
+    });
+
+    it('should return a string of multiple ageLimits', () => {
+        const procedureAgeLimitArray = { ...mockProcedureAgeLimit };
+        const forResultAgeLimit = {
+            ageLimits: [
+                { ageLow: 2, ageHigh: 6 },
+                { ageLow: 8, ageHigh: 10 }
+            ]
+        };
+        const result = pipe.transform(forResultAgeLimit);
+
+        expect(pipe.transform(procedureAgeLimitArray)).toEqual(result);
+    });
+
+    it('should return empty string', () => {
+        const procedureAgeLimitArray = { ...mockProcedureAgeLimit };
+        procedureAgeLimitArray.ageLimits = [
+            { ageLow: null, ageHigh: null },
+            { ageLow: null, ageHigh: null }
+        ];
+
+        expect(pipe.transform(procedureAgeLimitArray)).toEqual('');
+    });
+})
+
 describe('changeExistingEffDate', () => {
     it('returns dateFrom: effDate, dateTo:termDate', () => {
         const effDate = new Date('06/08/2019');

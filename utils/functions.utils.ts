@@ -137,7 +137,7 @@ function ageLimitRowData(ageLow: number, ageHigh: number): string {
     }
 }
 
-export function transform(rowData: any, ): any {
+export function ageLimitTransform(rowData: any, ): any {
     if (!rowData.ageLimits) {
         return ageLimitRowData(rowData.ageLow, rowData.ageHigh);
     }
