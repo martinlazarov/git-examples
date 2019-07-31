@@ -63,3 +63,30 @@ describe('mapProceduresWhenEdit', () => {
         expect(result[0].expanded).toBe(false);
     });
 });
+
+describe('addProceduresToClass', () => {
+    it('returns data with isCustom = 0', () => {
+        const result = createClassFunc.addProceduresToClass(mockProceduresData);
+        expect(result[0].isCustom).toEqual(0);
+    })
+    it('returns data with benClassId = 0', () => {
+        const result = createClassFunc.addProceduresToClass(mockProceduresData);
+        expect(result[0].isCustom).toEqual(0);
+    })
+    it('returns data with dateFrom = effDate', () => {
+        const effDate = new Date('06/08/2019');
+        const result = createClassFunc.addProceduresToClass(mockProceduresData, effDate);
+        expect(result[0].dateFrom).toEqual(effDate);
+    })
+})
+
+// TODO test
+// describe('markFormAsPristine', () => {
+//     it('should mark a form as pristine', () => {
+//         const testForm = mockForm;
+//         console.log(testForm);
+//         formAsPristine.markFormAsPristine(testForm);
+//         expect(testForm.value.description).toBe('ggg')
+//     })
+// })
+
